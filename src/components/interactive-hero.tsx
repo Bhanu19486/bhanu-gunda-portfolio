@@ -168,7 +168,7 @@ export function InteractiveHero() {
   }, [clearTimers]);
 
   const handlePointerMove = useCallback(
-    (event: React.PointerEvent<HTMLElement>) => {
+    (event: ReactPointerEvent<HTMLElement>) => {
       if (!finePointerRef.current || busyRef.current) return;
       const rect = heroRef.current?.getBoundingClientRect();
       if (!rect || rect.width === 0) return;
