@@ -262,6 +262,15 @@ export function InteractiveHero() {
               className="absolute inset-x-8 bottom-4 top-1/3 -z-10 rounded-full opacity-70 blur-3xl"
               style={{ background: "radial-gradient(closest-side, oklch(1 0 0 / 90%), transparent)" }}
             />
+            <div
+              className="relative w-full"
+              style={{
+                maskImage:
+                  "radial-gradient(115% 115% at 50% 45%, black 58%, rgba(0,0,0,0.55) 78%, transparent 99%)",
+                WebkitMaskImage:
+                  "radial-gradient(115% 115% at 50% 45%, black 58%, rgba(0,0,0,0.55) 78%, transparent 99%)",
+              }}
+            >
             <img
               src={workingFrame}
               alt="Bhanu working on his laptop"
