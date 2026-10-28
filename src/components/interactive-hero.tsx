@@ -263,7 +263,7 @@ export function InteractiveHero() {
               style={{ background: "radial-gradient(closest-side, oklch(1 0 0 / 90%), transparent)" }}
             />
             <div
-              className="relative w-full"
+              className="relative mx-auto w-full max-w-[min(78vw,430px)] md:max-w-[min(38vw,500px)]"
               style={{
                 maskImage:
                   "radial-gradient(115% 115% at 50% 45%, black 58%, rgba(0,0,0,0.55) 78%, transparent 99%)",
@@ -276,7 +276,7 @@ export function InteractiveHero() {
               alt="Bhanu working on his laptop"
               width={1024}
               height={1280}
-              className="h-auto w-full max-w-[min(78vw,430px)] select-none md:max-w-[min(38vw,500px)]"
+              className="h-auto w-full select-none"
               draggable={false}
             />
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
@@ -298,6 +298,7 @@ export function InteractiveHero() {
                   />
                 ),
               )}
+            </div>
             </div>
           </figure>
 
