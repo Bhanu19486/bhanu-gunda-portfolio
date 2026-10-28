@@ -135,8 +135,8 @@ export function InteractiveHero() {
       const targets = targetsRef.current;
       const opacities = opacitiesRef.current;
       for (let i = 0; i < FRAMES.length; i++) {
-        const target = targets[i];
-        const current = opacities[i];
+        const target = targets[i] ?? 0;
+        const current = opacities[i] ?? 0;
         if (Math.abs(target - current) > 0.002) {
           const next = current + (target - current) * 0.12;
           opacities[i] = next;
@@ -263,8 +263,8 @@ export function InteractiveHero() {
               style={{ background: "radial-gradient(closest-side, oklch(1 0 0 / 90%), transparent)" }}
             />
             <img
-              src={FRAMES[0].src}
-              alt={FRAMES[0].alt}
+              src={workingFrame}
+              alt="Bhanu working on his laptop"
               width={1024}
               height={1280}
               className="h-auto w-full max-w-[min(78vw,430px)] select-none md:max-w-[min(38vw,500px)]"
