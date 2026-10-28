@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 
 import workingFrame from "@/assets/character/working.png";
 import lookLeft from "@/assets/character/look-left.png";
